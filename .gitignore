@@ -13,9 +13,9 @@ env/
 # Generated artifacts (recreated on each run, don't commit)
 paper_embeddings.npy
 paper_faiss.index
-similarity_graph.png
-wordcloud.png
-Research_Report_*.pdf
+/similarity_graph.png
+/wordcloud.png
+/Research_Report_*.pdf
 
 # spaCy model download cache (installed via pip, not needed in repo)
 *.whl
