@@ -96,6 +96,16 @@ This prints the top recommended paper, its similarity score, an AI-generated sum
 
 Python · PyTorch · Hugging Face `transformers` & `datasets` · `sentence-transformers` · FAISS · KeyBERT · spaCy · Matplotlib · WordCloud · ReportLab · Rich
 
+## Sample Output
+
+**Similarity Score Analysis**
+
+![Similarity Graph](assets/similarity_graph.png)
+
+**Extracted Keyword Word Cloud**
+
+![Word Cloud](assets/wordcloud.png)
+
 ## Possible Improvements
 
 - Swap `IndexFlatIP` for an approximate index (e.g. `IndexIVFFlat`) to scale beyond the current dataset size
