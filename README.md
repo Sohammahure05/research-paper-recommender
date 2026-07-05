@@ -108,6 +108,10 @@ This prints the top recommended paper, its similarity score, an AI-generated sum
 
 ![Word Cloud](assets/wordcloud.png)
 
+**Generated PDF Report**
+
+![PDF Report Sample](assets/pdf_report_sample.png)
+
 ## Tech Stack
 
 Python · PyTorch · Hugging Face `transformers` & `datasets` · `sentence-transformers` · FAISS · KeyBERT · spaCy · Matplotlib · WordCloud · ReportLab · Rich
