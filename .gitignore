@@ -1,0 +1,26 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated artifacts (recreated on each run, don't commit)
+paper_embeddings.npy
+paper_faiss.index
+similarity_graph.png
+wordcloud.png
+Research_Report_*.pdf
+
+# spaCy model download cache (installed via pip, not needed in repo)
+*.whl
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
