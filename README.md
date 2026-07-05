@@ -1,5 +1,10 @@
 # 📚 Research Paper Recommendation System using NLP
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Hugging Face](https://img.shields.io/badge/🤗-Transformers-yellow)
+
 An end-to-end NLP pipeline that recommends the most relevant research paper for a natural-language query, then automatically summarizes it, extracts keywords and named entities, visualizes similarity scores, and exports everything as a shareable PDF report.
 
 ## Overview
@@ -37,6 +42,7 @@ Given a query like *"deep learning for medical image analysis"*, the system:
 .
 ├── notebooks/
 │   └── research_paper_recommender.ipynb   # Main notebook — run top to bottom
+├── assets/                                # Sample output images used in this README
 ├── requirements.txt                       # Python dependencies
 ├── .gitignore
 ├── LICENSE
@@ -55,8 +61,8 @@ Running the notebook will generate a few artifacts in the working directory (not
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/Sohammahure05/research-paper-recommender.git
+cd research-paper-recommender
 ```
 
 ### 2. Set up an environment
@@ -74,7 +80,7 @@ python -m spacy download en_core_web_sm
 jupyter notebook notebooks/research_paper_recommender.ipynb
 ```
 
-Run all cells in order. The first run will download the dataset and models and build the embedding cache; subsequent runs reuse the cached embeddings and FAISS index.
+Run all cells in order. The first run downloads the dataset and models and builds the embedding cache; subsequent runs reuse the cached embeddings and FAISS index.
 
 ### 4. Try your own query
 
@@ -92,10 +98,6 @@ search_and_summarize("Brain Tumor Detection using Deep Learning", k=5)
 
 This prints the top recommended paper, its similarity score, an AI-generated summary, detected named entities, extracted keywords, and saves a similarity chart, word cloud, and PDF report.
 
-## Tech Stack
-
-Python · PyTorch · Hugging Face `transformers` & `datasets` · `sentence-transformers` · FAISS · KeyBERT · spaCy · Matplotlib · WordCloud · ReportLab · Rich
-
 ## Sample Output
 
 **Similarity Score Analysis**
@@ -105,6 +107,10 @@ Python · PyTorch · Hugging Face `transformers` & `datasets` · `sentence-trans
 **Extracted Keyword Word Cloud**
 
 ![Word Cloud](assets/wordcloud.png)
+
+## Tech Stack
+
+Python · PyTorch · Hugging Face `transformers` & `datasets` · `sentence-transformers` · FAISS · KeyBERT · spaCy · Matplotlib · WordCloud · ReportLab · Rich
 
 ## Possible Improvements
 
@@ -120,3 +126,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 **Soham Mahure**
+
+[GitHub](https://github.com/Sohammahure05)
